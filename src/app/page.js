@@ -16,11 +16,8 @@ import useImagePreloader from "@/hooks/useImagePreloader";
 
 export default function Home() {
    const criticalImages = [
-    data.hero.image,
-    ...data.gallery.slice(0, 6).map(
-      (item) => item.image
-    ),
-  ];
+    data.hero.image
+   ];
 
   const imagesLoaded =
     useImagePreloader(criticalImages);
