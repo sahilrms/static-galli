@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+:root {
+  --yellow: #ffc83d;
+  --black: #111111;
+  --white: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #111;
+  color: white;
+  overflow-x: hidden;
+  font-family: var(--font-poppins);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-bebas);
+  letter-spacing: 2px;
+}
+
+.section-title {
+  font-size: clamp(3rem, 6vw, 5rem);
+  text-transform: uppercase;
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.btn-primary {
+  background: var(--yellow);
+  color: black;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  border: 2px solid var(--yellow);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
+}
+
+.graffiti-bg {
+  background-image:
+    radial-gradient(circle at 10% 10%, #222 0%, transparent 25%);
+}
+
+.hero-title {
+  text-shadow:
+    0 0 20px rgba(255,255,255,.15);
+}
+
+.glass {
+  background: rgba(255,255,255,.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.yellow {
+  color: #ffc83d;
+}
+.polaroid {
+  width: 350px;
+  background: white;
+  padding: 12px;
+  box-shadow:
+    0 15px 40px rgba(0,0,0,.4);
+
+  transform: rotate(-4deg);
+
+  transition: .4s;
+}
+
+.polaroid:hover {
+  transform:
+    rotate(0deg)
+    scale(1.03);
+}
+
+.glass {
+  background:
+    rgba(255,255,255,.05);
+
+  backdrop-filter:
+    blur(20px);
+
+  border:
+    1px solid
+    rgba(255,255,255,.08);
+}

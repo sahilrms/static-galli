@@ -1,0 +1,84 @@
+{
+  "business": {
+    "name": "Galli Cafe",
+    "tagline": "Coffee. Conversations. Chill Scenes.",
+    "description": "Good coffee. Good food. Good people.",
+    "phone": "+91 9876543210",
+    "address": "123 Galli Street, City Center",
+    "hours": "11:00 AM - 11:00 PM",
+    "instagram": "@gallicafe_official",
+    "whatsapp": "+919876543210"
+  },
+
+  "hero": {
+    "coffeeImage": "/images/coffee-cup.jpg",
+    "image": "/images/hero.jpg",
+    "badge": "🔥 Trending Spot"
+  },
+
+  "about": {
+    "title": "The Galli Vibe",
+    "description": "A place where coffee meets conversations, friends meet after college, and every table has a story.",
+    "image": "/images/about.jpg"
+  },
+
+  "special": {
+    "title": "Brownie Shake",
+    "description": "Chocolate overload for your mood!",
+    "price": 210,
+    "image": "/images/special.jpg"
+  },
+
+  "menu": [
+    {
+      "name": "Cold Coffee",
+      "price": 150,
+      "category": "Coffee",
+      "popular": true,
+      "image": "/images/menu/cold-coffee.jpg",
+      "description": "Thick & creamy iced coffee"
+    },
+    {
+      "name": "Loaded Fries",
+      "price": 220,
+      "category": "Food",
+      "popular": true,
+      "image": "/images/menu/fries.jpg",
+      "description": "Crispy fries loaded with cheese"
+    },
+    {
+      "name": "Veg Burger",
+      "price": 180,
+      "category": "Food",
+      "popular": false,
+      "image": "/images/menu/burger.jpg",
+      "description": "Crunchy veggie patty"
+    }
+  ],
+
+  "gallery": [
+    "/images/gallery/1.jpg",
+    "/images/gallery/2.jpg",
+    "/images/gallery/3.jpg",
+    "/images/gallery/4.jpg",
+    "/images/gallery/5.jpg"
+  ],
+
+  "reviews": [
+    {
+      "name": "Rahul",
+      "rating": 5,
+      "text": "Best place to hangout with friends."
+    },
+    {
+      "name": "Ananya",
+      "rating": 5,
+      "text": "Coffee is love ❤️"
+    }
+  ],
+
+   "location": {
+    "googleMapUrl": "https://maps.google.com/?q=YourCafe"
+  }
+ 
+}
