@@ -1,3 +1,4 @@
+"use client";
 import data from "@/data/cafe.json";
 
 import Navbar from "@/components/Navbar";
@@ -10,7 +11,23 @@ import ReviewSection from "@/components/ReviewSection";
 import LocationSection from "@/components/LocationSection";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import Loader from "@/components/Loader";
+import useImagePreloader from "@/hooks/useImagePreloader";
+
 export default function Home() {
+   const criticalImages = [
+    data.hero.image,
+    ...data.gallery.slice(0, 6).map(
+      (item) => item.image
+    ),
+  ];
+
+  const imagesLoaded =
+    useImagePreloader(criticalImages);
+
+  if (!imagesLoaded) {
+    return <Loader />;
+  }
   return (
     <>
       <Navbar data={data} />
